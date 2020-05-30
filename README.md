@@ -15,8 +15,10 @@ Before matching, the text goees through the following pipeline of functions.
 ```
 a := "Hello Kitty,The Quick Brown Frog Jumped"
 b := "Kitty Hello Frogs are always known to be quick"
-fmt.Printf("%+v", Similarity(a, b, true)) // last parameter 'true' if a needs to be treated as a master string or a source.
+// last parameter 'true' if a needs to be treated as a master string or a source.
+fmt.Printf("%+v", Similarity(a, b, true)) 
 
-fmt.Printf("%+v", Similarity(a, b, true)) // last parameter 'false' if a does not to be treated as a master string or a source.
+// last parameter 'false' if a does not to be treated as a master string or a source.
+fmt.Printf("%+v", Similarity(a, b, true)) 
 
 ```
