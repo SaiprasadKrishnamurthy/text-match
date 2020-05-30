@@ -65,6 +65,7 @@ func toVector(corpus []string, wordFreq map[string]int) []float64 {
 }
 
 func applyStopwords(s string) string {
+	// english stop words. TODO parameterise later.
 	return stopwords.CleanString(s, "en", false)
 }
 
