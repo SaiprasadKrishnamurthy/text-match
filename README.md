@@ -12,4 +12,11 @@ Before matching, the text goees through the following pipeline of functions.
 * The text is encoded to it's Stem using porter-stemmer method. 
 * The Original text is also retained.
 
+```
+a := "Hello Kitty,The Quick Brown Frog Jumped"
+b := "Kitty Hello Frogs are always known to be quick"
+fmt.Printf("%+v", Similarity(a, b, true)) // last parameter 'true' if a needs to be treated as a master string or a source.
 
+fmt.Printf("%+v", Similarity(a, b, true)) // last parameter 'false' if a does not to be treated as a master string or a source.
+
+```
