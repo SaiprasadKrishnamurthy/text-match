@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"math"
 	"sort"
 	"strings"
@@ -49,14 +48,6 @@ func Similarity(master string, other string, useMasterStringAsCorpus bool) Simil
 	abssim := absoluteSimilarity(vectorA, vectorB)
 
 	return SimilarityScore{A: master, B: other, CosineSimilarityScore: cossim, AbsoluteSimilarityScore: abssim, AMasterString: useMasterStringAsCorpus}
-
-}
-
-func main() {
-	a := "Hello Kitty Kajue"
-	b := "Kitty Hello Kajue Ksllow kkjusubeh shjhsuygd sjhsueb shjasjagd"
-
-	fmt.Printf("%+v", Similarity(a, b, true))
 
 }
 
